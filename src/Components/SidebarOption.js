@@ -5,6 +5,7 @@ function SidebarOption({ Icon, title }) {
 	return (
 		<SidebarOptionContainer>
 			{Icon && <Icon fontSize="small" style={{ padding: 10 }} />}
+			{Icon ? <h3>{title}</h3> : <SidebarOptionChannel></SidebarOptionChannel>}
 		</SidebarOptionContainer>
 	);
 }
@@ -12,3 +13,5 @@ function SidebarOption({ Icon, title }) {
 export default SidebarOption;
 
 const SidebarOptionContainer = styled.div``;
+
+const SidebarOptionChannel = styled.div``;
