@@ -19,6 +19,8 @@ function SidebarOption({ Icon, title }) {
 
 export default SidebarOption;
 
-const SidebarOptionContainer = styled.div``;
+const SidebarOptionContainer = styled.div`
+	display: flex;
+`;
 
 const SidebarOptionChannel = styled.div``;
