@@ -8,30 +8,10 @@ function App() {
 			<h1>Slack evil-clone</h1>
 			<Router>
 				<div>
-					<nav>
-						<ul>
-							<li>
-								<Link to="/">Home</Link>
-							</li>
-							<li>
-								<Link to="/about">About</Link>
-							</li>
-							<li>
-								<Link to="/users">Users</Link>
-							</li>
-						</ul>
-					</nav>
-
 					<Switch>
-						<Route path="/about">
-							<About />
-						</Route>
-						<Route path="/users">
-							<Users />
-						</Route>
-						<Route path="/">
-							<Home />
-						</Route>
+						<Route path="/about"></Route>
+						<Route path="/users"></Route>
+						<Route path="/"></Route>
 					</Switch>
 				</div>
 			</Router>
