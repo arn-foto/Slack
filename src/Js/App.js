@@ -5,11 +5,10 @@ import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
 function App() {
 	return (
 		<div className="App">
-			<h1>Slack evil-clone</h1>
 			<Router>
 				<div>
 					<Switch>
-						<Route path="/">
+						<Route path="/" exact>
 							<h1>this is the landing page</h1>
 						</Route>
 					</Switch>
