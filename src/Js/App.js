@@ -9,9 +9,9 @@ function App() {
 			<Router>
 				<div>
 					<Switch>
-						<Route path="/about"></Route>
-						<Route path="/users"></Route>
-						<Route path="/"></Route>
+						<Route path="/">
+							<h1>this is the landing page</h1>
+						</Route>
 					</Switch>
 				</div>
 			</Router>
