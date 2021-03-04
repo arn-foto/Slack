@@ -25,6 +25,7 @@ function Header() {
 
 export default Header;
 
+// styles for header container
 const HeaderContainer = styled.div`
 	display: flex;
 	position: fixed;
@@ -35,7 +36,7 @@ const HeaderContainer = styled.div`
 	color: white;
 `;
 
-// styles below
+// left header styles below
 const HeaderLeft = styled.div`
 	display: flex;
 	align-items: center;
@@ -56,6 +57,7 @@ const HeaderAvatar = styled(Avatar)`
 	}
 `;
 
+// search styles
 const HeaderSearch = styled.div`
 	display: flex;
 	flex: 0.4;
@@ -66,12 +68,13 @@ const HeaderSearch = styled.div`
 	padding: 0 50px;
 	color: gray;
 	border: 1px gray solid;
-
+	// search input styles
 	> input {
 		background-color: transparent;
 		border: none;
 		text-align: center;
 		min-width: 30vw;
 		outline: none;
+		color: white;
 	}
 `;
