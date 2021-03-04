@@ -1,5 +1,6 @@
 import React from "react";
 import styled from "styled-components";
+import { Avatar } from "@material-ui/core";
 
 function Header() {
 	return (
