@@ -64,4 +64,14 @@ const HeaderSearch = styled.div`
 	background-color: #421f44;
 	text-align: center;
 	padding: 0 50px;
+	color: gray;
+	border: 1px gray solid;
+
+	> input {
+		background-color: transparent;
+		border: none;
+		text-align: center;
+		min-width: 30vw;
+		outline: none;
+	}
 `;
