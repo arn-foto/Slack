@@ -56,4 +56,12 @@ const HeaderAvatar = styled(Avatar)`
 	}
 `;
 
-const HeaderSearch = styled.div``;
+const HeaderSearch = styled.div`
+	display: flex;
+	flex: 0.4;
+	opacity: 1;
+	border-radius: 6px;
+	background-color: #421f44;
+	text-align: center;
+	padding: 0 50px;
+`;
