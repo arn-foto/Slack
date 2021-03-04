@@ -26,6 +26,12 @@ const HeaderLeft = styled.div`
 	display: flex;
 	align-items: center;
 	flex: 0.3;
+	margin-left: 20px;
+
+	> .MuiSvgIcon-root {
+		margin-left: auto;
+		margin-right: 30px;
+	}
 `;
 
 const HeaderRight = styled.div``;
