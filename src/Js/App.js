@@ -1,5 +1,6 @@
 import "../Css/App.css";
 import React from "react";
+import Header from "../Js/Header";
 import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
 
 function App() {
@@ -9,7 +10,7 @@ function App() {
 				<div>
 					<Switch>
 						<Route path="/" exact>
-							<h1>this is the landing page</h1>
+							<Header />
 						</Route>
 					</Switch>
 				</div>
