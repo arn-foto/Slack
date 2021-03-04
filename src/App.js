@@ -1,6 +1,6 @@
-import "../Css/App.css";
+import "../src/Css/App.css";
 import React from "react";
-import Header from "../Js/Header";
+import Header from "../src/Components/Header";
 import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
 
 function App() {
