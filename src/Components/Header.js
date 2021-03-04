@@ -1,13 +1,15 @@
 import React from "react";
 import styled from "styled-components";
 import { Avatar } from "@material-ui/core";
+import AccessTimeIcon from "@material-ui/icons/AccessTime";
 
 function Header() {
 	return (
 		<div>
 			<HeaderContainer>
 				<HeaderLeft>
-					<h1>yo</h1>
+					<HeaderAvatar />
+					<AccessTimeIcon />
 				</HeaderLeft>
 			</HeaderContainer>
 		</div>
