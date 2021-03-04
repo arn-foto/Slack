@@ -2,6 +2,7 @@ import React from "react";
 import styled from "styled-components";
 import { Avatar } from "@material-ui/core";
 import AccessTimeIcon from "@material-ui/icons/AccessTime";
+import "../Css/index.css";
 
 function Header() {
 	return (
@@ -20,6 +21,12 @@ export default Header;
 
 const HeaderContainer = styled.div`
 	display: flex;
+	position: fixed;
+	width: 100%;
+	align-items: center;
+	padding: 10px 0;
+	background-color: var(--slack-color);
+	color: white;
 `;
 
 // styles below
