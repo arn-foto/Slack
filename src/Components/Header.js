@@ -22,6 +22,7 @@ const HeaderContainer = styled.div`
 	display: flex;
 `;
 
+// styles below
 const HeaderLeft = styled.div`
 	display: flex;
 	align-items: center;
@@ -34,6 +35,12 @@ const HeaderLeft = styled.div`
 	}
 `;
 
-const HeaderRight = styled.div``;
+const HeaderAvatar = styled(Avatar)`
+	cursor: pointer;
 
-const HeaderAvatar = styled(Avatar)``;
+	:hover {
+		opacity: 0.8;
+	}
+`;
+
+const HeaderRight = styled.div``;
