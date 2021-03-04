@@ -18,9 +18,15 @@ function Header() {
 
 export default Header;
 
-const HeaderContainer = styled.div``;
+const HeaderContainer = styled.div`
+	display: flex;
+`;
 
-const HeaderLeft = styled.div``;
+const HeaderLeft = styled.div`
+	display: flex;
+	align-items: center;
+	flex: 0.3;
+`;
 
 const HeaderRight = styled.div``;
 
