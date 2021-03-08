@@ -1,5 +1,6 @@
 import React from "react";
 import styled from "styled-components";
+import FiberManualRecordIcon from "@material-ui/icons/FiberManualRecord";
 
 function Sidebar() {
 	return (
@@ -7,6 +8,9 @@ function Sidebar() {
 			<SidebarHeader>
 				<SidebarInfo>
 					<h2>dang ol, yo</h2>
+					<h3>
+						<FiberManualRecordIcon />
+					</h3>
 				</SidebarInfo>
 			</SidebarHeader>
 		</SidebarContainer>
