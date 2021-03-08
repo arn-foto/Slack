@@ -12,7 +12,9 @@ function App() {
 					<Header />
 					<AppBody>
 						<Switch>
-							<Route path="/" exact></Route>
+							<Route path="/" exact>
+								{/*chat*/}
+							</Route>
 						</Switch>
 					</AppBody>
 				</div>
