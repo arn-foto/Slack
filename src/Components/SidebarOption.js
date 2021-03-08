@@ -21,6 +21,10 @@ export default SidebarOption;
 
 const SidebarOptionContainer = styled.div`
 	display: flex;
+	cursor: pointer;
+	padding-left: 2px;
+	align-items: center;
+	font-size: 12px;
 `;
 
 const SidebarOptionChannel = styled.div``;
