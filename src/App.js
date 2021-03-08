@@ -1,6 +1,7 @@
 import "../src/Css/App.css";
 import React from "react";
 import Header from "../src/Components/Header";
+import styled from "styled-components";
 import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
 
 function App() {
@@ -8,11 +9,12 @@ function App() {
 		<div className="App">
 			<Router>
 				<div>
-					<Switch>
-						<Route path="/" exact>
-							<Header />
-						</Route>
-					</Switch>
+					<Header />
+					<AppBody>
+						<Switch>
+							<Route path="/" exact></Route>
+						</Switch>
+					</AppBody>
 				</div>
 			</Router>
 		</div>
@@ -20,3 +22,5 @@ function App() {
 }
 
 export default App;
+
+const AppBody = styled.div``;
