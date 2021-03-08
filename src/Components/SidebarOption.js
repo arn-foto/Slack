@@ -25,6 +25,11 @@ const SidebarOptionContainer = styled.div`
 	padding-left: 2px;
 	align-items: center;
 	font-size: 12px;
+
+	:hover {
+		opacity: 0.9;
+		background-color: #340e36;
+	}
 `;
 
 const SidebarOptionChannel = styled.div``;
