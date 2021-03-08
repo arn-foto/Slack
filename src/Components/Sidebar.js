@@ -45,4 +45,12 @@ const SidebarHeader = styled.div`
 	}
 `;
 
-const SidebarInfo = styled.div``;
+const SidebarInfo = styled.div`
+	flex: 1;
+
+	> h2 {
+		font-size: 15px;
+		font-weight: 900;
+		margin-bottom: 50px;
+	}
+`;
