@@ -8,10 +8,10 @@ function Sidebar() {
 		<SidebarContainer>
 			<SidebarHeader>
 				<SidebarInfo>
-					<h2>dang ol, yo</h2>
+					<h2>Propane</h2>
 					<h3>
 						<FiberManualRecordIcon />
-						Anthony Navarro
+						Hank Hill
 					</h3>
 				</SidebarInfo>
 				<CreateIcon />
@@ -51,7 +51,7 @@ const SidebarInfo = styled.div`
 	> h2 {
 		font-size: 15px;
 		font-weight: 900;
-		margin-bottom: 50px;
+		margin-bottom: 5px;
 	}
 
 	h3 > {
