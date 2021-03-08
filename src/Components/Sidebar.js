@@ -53,4 +53,11 @@ const SidebarInfo = styled.div`
 		font-weight: 900;
 		margin-bottom: 50px;
 	}
+
+	h3 > {
+		display: flex;
+		font-size: 13px;
+		font-weight: 400;
+		align-items: center;
+	}
 `;
