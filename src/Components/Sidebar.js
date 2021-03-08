@@ -10,6 +10,7 @@ function Sidebar() {
 					<h2>dang ol, yo</h2>
 					<h3>
 						<FiberManualRecordIcon />
+						Anthony Navarro
 					</h3>
 				</SidebarInfo>
 			</SidebarHeader>
@@ -19,7 +20,9 @@ function Sidebar() {
 
 export default Sidebar;
 
-const SidebarContainer = styled.div``;
+const SidebarContainer = styled.div`
+	background-color: var(--slack-color);
+`;
 
 const SidebarHeader = styled.div``;
 
