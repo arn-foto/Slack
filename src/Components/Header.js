@@ -62,7 +62,11 @@ const HeaderAvatar = styled(Avatar)`
 	}
 `;
 
-const HeaderRight = styled.div``;
+const HeaderRight = styled.div`
+	flex: 0.3;
+	display: flex;
+	align-items: flex-end;
+`;
 
 // search styles
 const HeaderSearch = styled.div`
