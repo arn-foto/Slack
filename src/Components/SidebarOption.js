@@ -2,7 +2,7 @@ import React from "react";
 import styled from "styled-components";
 
 function SidebarOption() {
-	return <div></div>;
+	return <SidebarOptionContainer></SidebarOptionContainer>;
 }
 
 export default SidebarOption;
