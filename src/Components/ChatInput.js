@@ -28,4 +28,13 @@ const ChatInputContainer = styled.div`
 		display: flex;
 		justify-content: center;
 	}
+	> form > input {
+		outline: none;
+		padding: 20px;
+		border-radius: 3px;
+		border: 1px solid gray;
+		width: 60%;
+		bottom: 30px;
+		position: fixed;
+	}
 `;
