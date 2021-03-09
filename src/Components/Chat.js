@@ -2,23 +2,33 @@ import styled from "styled-components";
 import React from "react";
 import StarBorderOutlinedIcon from "@material-ui/icons/StarBorderOutlined";
 import InfoOutlinedIcon from "@material-ui/icons/InfoOutlined";
+import { useSelector } from "react-redux";
+import { selectRoomId } from "../features/appSlice";
+import ChatInput from "./ChatInput";
 
 function Chat() {
+	const roomId = useSelector(selectRoomId);
+
 	return (
 		<ChatContainer>
-			<Header>
-				<HeaderLeft>
-					<h4>
-						<strong>#Room-name</strong>
-					</h4>
-					<StarBorderOutlinedIcon />
-				</HeaderLeft>
-				<HeaderRight>
-					<p>
-						<InfoOutlinedIcon /> Details
-					</p>
-				</HeaderRight>
-			</Header>
+			<>
+				{" "}
+				<Header>
+					<HeaderLeft>
+						<h4>
+							<strong>#Room-name</strong>
+						</h4>
+						<StarBorderOutlinedIcon />
+					</HeaderLeft>
+					<HeaderRight>
+						<p>
+							<InfoOutlinedIcon /> Details
+						</p>
+					</HeaderRight>
+				</Header>
+				<ChatMessages></ChatMessages>
+				<ChatInput channelId={roomId} />
+			</>
 		</ChatContainer>
 	);
 }
@@ -45,6 +55,7 @@ const HeaderRight = styled.div`
 		align-items: center;
 		font-size: 14px;
 	}
+
 	> p > .MuiSvgIcon-root {
 		margin-right: 5px !important;
 		font-size: 16px;
@@ -54,6 +65,7 @@ const HeaderRight = styled.div`
 const HeaderLeft = styled.div`
 	display: flex;
 	align-items: center;
+
 	> h4 {
 		display: flex;
 		text-transform: lowercase;
@@ -64,3 +76,5 @@ const HeaderLeft = styled.div`
 		font-size: 18px;
 	}
 `;
+
+const ChatMessages = styled.div``;
