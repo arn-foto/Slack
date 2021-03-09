@@ -32,8 +32,25 @@ const ChatContainer = styled.div`
 	margin-top: 60px;
 `;
 
-const Header = styled.div``;
+const Header = styled.div`
+	display: flex;
+	justify-content: space-between;
+	padding: 20px;
+	border-bottom: 1px solid lightgrey;
+`;
 
 const HeaderRight = styled.div``;
 
-const HeaderLeft = styled.div``;
+const HeaderLeft = styled.div`
+	display: flex;
+	align-items: center;
+	> h4 {
+		display: flex;
+		text-transform: lowercase;
+		margin-right: 10px;
+	}
+	> h4 > .MuiSvgIcon-root {
+		margin-left: 20px;
+		font-size: 18px;
+	}
+`;
