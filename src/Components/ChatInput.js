@@ -10,13 +10,16 @@ function ChatInput(channelName, channelId) {
 	const sendMessage = (e) => {
 		e.preventDefault();
 
-		if (channelId) {
+		if (!channelId) {
 			return false;
 		}
 		db.collection("rooms").doc(channelId).collection("messages").add({
 			message: input,
 			timestamp: firebase.firestore.FieldValue.serverTimestamp(),
+			user: "Hank Hill",
+			userImage: "",
 		});
+		setInput("");
 	};
 
 	return (

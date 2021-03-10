@@ -61,7 +61,7 @@ const HeaderAvatar = styled(Avatar)`
 		opacity: 0.8;
 	}
 `;
-
+// header right styles
 const HeaderRight = styled.div`
 	flex: 0.3;
 	display: flex;
