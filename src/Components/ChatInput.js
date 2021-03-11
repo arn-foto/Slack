@@ -1,5 +1,5 @@
 import styled from "styled-components";
-import React, { useRef, useState } from "react";
+import React, { useState } from "react";
 import { Button } from "@material-ui/core";
 import { db } from "../firebase";
 import firebase from "firebase";
@@ -10,7 +10,9 @@ function ChatInput(channelName, channelId) {
 	const sendMessage = (e) => {
 		e.preventDefault();
 
-		if (channelId) {
+		console.log(channelId);
+
+		if (!channelId) {
 			return false;
 		}
 		db.collection("rooms").doc(channelId).collection("messages").add({
