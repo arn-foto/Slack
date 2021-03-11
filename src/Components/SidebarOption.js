@@ -9,6 +9,7 @@ function SidebarOption({ id, Icon, title, addChannelOption }) {
 
 	const addChannel = () => {
 		const channelName = prompt("Please enter a channel name");
+
 		if (channelName) {
 			db.collection("rooms").add({
 				name: channelName,
